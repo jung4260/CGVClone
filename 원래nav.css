@@ -1,0 +1,12 @@
+/*  -------------------네비부분-------------------  */
+.nav{position: absolute; top:113px; left:0; width: 100%; padding: 5px 0; border-bottom: 1px solid red;}
+.nav .contents {position: relative;}
+.nav .contents .nav-menu {display: inline-flex;}
+.nav .contents .nav-menu > li:first-child {width: 137px; padding: 20px 0;}
+.nav .contents .nav-menu > li {width:162px; padding: 20px 0;}
+.nav .contents .nav-menu li h2 {position:absolute; top:7px;}
+.nav .contents .nav-menu li h2 a {text-decoration: none; font-size: 16px; line-height: 1.500rem; color: #222; font-weight: 800;}
+
+.nav .contents .search {display: inline-flex; position: absolute; right:0; top:5px; padding: 0 36px 0 10px;}
+.nav .contents .search input {border-style: none; border-left: 1px solid #a7a7a7;}
+

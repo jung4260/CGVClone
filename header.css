@@ -1,0 +1,52 @@
+body {height: 100%; display:block;}
+ul, li, ol {list-style: none;}
+a {color: black; }
+
+.ad1 {text-align: center; background-color: #2163B9;}
+.ad1:hover {cursor: pointer;}
+
+/* -------------------헤더부분------------------- */
+.header {position: relative; z-index: 101;}
+.header .contents {width: 980px; margin: 0 auto;}
+.header-content{margin-bottom: 50px; border-bottom: 1px solid #2163B9;}
+.header-content .contents {display: flex; padding: 30px 6px 25px 5px; justify-content: space-between;}
+.header-content .contents h1 {display: inline-flex; align-items: flex-end; height: 53px;}
+.header-content .contents h1 a {display: block; float: left; height: 100%;}
+.header-content .contents h1 span {letter-spacing: 3.5px; font-size: 16px; color:#222; font-weight: 500;}
+.header-content .contents h1 a img {display: block; width: auto; height: 100%;}
+
+.header-content .contents .member-wrap {display: flex; align-items: center;}
+.header-content .contents .member-wrap li {margin-left: 44px; margin-top:2px;}
+.header-content .contents .member-wrap li a {text-decoration: none; display: block;padding-bottom: 19px; position: relative;}
+.header-content .contents .member-wrap li a img {width:30px; height:30px;}
+.header-content .contents .member-wrap .member1{font-size: 14px; position: absolute; bottom: 5px; left: 0; white-space: nowrap; font-size: 12px;}
+.header-content .contents .member-wrap .member2{font-size: 14px; position: absolute; bottom: 5px; left: -5px; white-space: nowrap; font-size: 12px;}
+
+/*  -------------------네비부분-------------------  */
+.nav{position: absolute; top:113px; left:0; width: 100%; padding: 5px 0; border-bottom: 1px solid red;}
+
+.nav .contents .search {display: inline-flex; position: absolute; right:0; top:5px; padding: 0 36px 0 10px;}
+.nav .contents .search input {border-style: none; border-left: 1px solid #a7a7a7;}
+
+/*  -------------------fixed nav-------------------  */
+.nav.fixed {position: fixed; top:0px; min-width: 1000px; padding:10px 0;}
+.nav.fixed .contents {z-index: 2;}
+.nav.fixed .contents h1 {display: block; position: absolute; left:0; top: 1px; width: 70px; height:32px; z-index: 3;}
+.nav.fixed .contents h1 a{text-decoration: none;}
+.nav.fixed .contents h1 a img{width:100%; height:100%;}
+.nav.fixed .contents .nav-menu li h2 a {color:white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
