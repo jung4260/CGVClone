@@ -23,6 +23,7 @@ a {color: black; }
 .header-content .contents .member-wrap .member2{font-size: 14px; position: absolute; bottom: 5px; left: -5px; white-space: nowrap; font-size: 12px;}
 
 /*  -------------------네비부분-------------------  */
+<<<<<<< Updated upstream
 .nav{position: absolute; top:113px; left:0; width: 100%; padding: 5px 0; border-bottom: 2px solid rgb(167, 43, 43);}
 .hidden-logo {display:none;}
 .nav .contents {overflow: hidden;}
@@ -31,6 +32,14 @@ a {color: black; }
 .nav .contents .nav-menu > li > h2 > a {display: inline-block; text-decoration: none;}
 .nav .contents .search {float: right; padding-top: 20px;}
 .nav .contents .search input {border-style: none; border-left: 1px solid #a7a7a7;}
+=======
+/* .nav .contents {} */
+.nav .contents h1 {float: left; display: hidden;}
+.nav .contents .nav-menu {overflow: hidden;}
+.nav .contents .nav-menu li {float: left;}
+.nav .contents .nav-menu li h2 a{display: inline-block;}
+
+>>>>>>> Stashed changes
 
 /*  -------------------fixed nav-------------------  */
 .nav.fixed {position: fixed; top:0px; min-width: 1000px; padding:10px 0;}

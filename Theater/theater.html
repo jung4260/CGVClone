@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/default.css">
     <link rel="stylesheet" href="theater.css">
+    <script src="/Theater/theater.js"></script>
 
 </head>
 <body>
@@ -31,9 +32,7 @@
 
                 <div class="sect-city">
                     <ul>
-                        <li>
-                            <a href="#">서울</a>
-                        </li>
+                        <li class="on"><a href="#">서울</a></li>
                         <li><a href="#">경기</a></li>
                         <li><a href="#">인천</a></li>
                         <li><a href="#">강원</a></li>
@@ -43,7 +42,7 @@
                         <li><a href="#">광주/전라/제주</a></li>
                     </ul>
                     <div class="area">
-                        <ul class="theater-list">
+                        <ul class="theater-list active" data-city="서울">
                             <li><a href="#"><span>CGV강남</span></a></li>
                             <li><a href="#"><span>CGV강변</span></a></li>
                             <li><a href="#"><span>CGV건대입구</span></a></li>
@@ -70,10 +69,39 @@
                             <li><a href="#"><span>CGV홍대</span></a></li>
                             <li><a href="#"><span>CGV홍대</span></a></li>
                         </ul>
+                        <ul class="theater-list" data-city="경기">
+                            <li><a href="#"><span>CGV경기광주</span></a></li>
+                            <li><a href="#"><span>CGV고양백석</span></a></li>
+                            <li><a href="#"><span>CGV고양행신</span></a></li>
+                            <li><a href="#"><span>CGV광교</span></a></li>
+                            <li><a href="#"><span>CGV광교상현</span></a></li>
+                            <li><a href="#"><span>CGV광명역</span></a></li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
+
+            <script>
+                var sectCity = document.querySelector(".sect-city");
+                var theaterLists = document.querySelectorAll(".theater-list");
+        
+                sectCity.addEventListener('click', function () {
+                    var target = event.target;
+                    
+                    if (target.tagName === 'A') {
+                        var cityName = target.innerHTML;
+        
+                        theaterLists.forEach(function (list) {
+                            list.classList.remove("active");
+                        });
+        
+                        var theaterList = document.querySelector('.theater-list[data-city="' + cityName + '"]');
+                        if (theaterList) {
+                            theaterList.classList.add("active");
+                        }
+                    }
+                });
+            </script>
 
             <div class="theater-logo">
                 <h3><img src="/Theater_img/h3_theater.gif" alt=""></h3>

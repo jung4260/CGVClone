@@ -21,10 +21,12 @@ a {color: white; text-decoration: none; }
 
 /* ------------------극장 상세 지역------------------ */
 
-.sect-city .area .theater-list {overflow: hidden; display: block; margin-top: 15px;}
-.sect-city .area .theater-list li { float:left; display: inline-block;}
-.sect-city .area .theater-list li a span {font-size: 12px; border-right: 1px solid white; padding-right: 10px;}
+.sect-city .area .theater-list.active {overflow: hidden; display: block; margin-top: 15px;}
+.sect-city .area .theater-list.active li { float:left; display: inline-block;}
+.sect-city .area .theater-list.active li a span {font-size: 12px; border-right: 1px solid white; padding-right: 10px;}
 .sect-city .area .theater-list:last-child {border: none;}
+
+.sect-city .area .theater-list {display:none;}
 
 
 /* ------------------극장 상세 내용------------------ */
