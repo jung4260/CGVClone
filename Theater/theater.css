@@ -1,0 +1,46 @@
+ul, li, ol {list-style: none;}
+a {color: white; text-decoration: none; }
+
+.container{position:relative; width: 980px; margin: 0 auto;}
+
+
+/* ------------------극장 목록------------------*/
+.favorite-wrap{width:874px; height:400px;  padding: 60px; background-repeat: no-repeat; background-image: url(/Theater_img/background_showtimes_favorite.gif);}
+.favorite-wrap .sect-favorite{position: relative; width:676px; height:49px; padding-left: 178px;}
+.favorite-wrap .sect-favorite h4{position:absolute; top:14px; left:20px;}
+.favorite-wrap .sect-favorite .fav-list li {display: inline-block; border:2px solid #6e6c6d; overflow: hidden; padding:2px;}
+.favorite-wrap .sect-favorite .fav-list li a {display: block; border:2px solid #6e6c6d; float: left; width:107px; height:39px; text-decoration: none; color:white; position:relative;}
+.favorite-wrap .sect-favorite .fav-list li a span{font-size: 12px; position: absolute; top:3px; right:8px;}
+.favorite-wrap .sect-favorite .fav-list-add {background-image: url(/Theater_img/btn_plus.gif); width: 50px; height: 50px; position: absolute; right: 4px; top: 1px;}
+
+/* ------------------시/군/구 지역------------------*/
+.sect-city {border-top: 2px solid #727171; border-bottom: 2px solid #727171; margin-top: 18px; height:42px;}
+.sect-city ul{display: flex; align-items: center; justify-content: space-evenly; position: relative;}
+.sect-city ul li{padding: 10px 10px 10px 0;}
+.sect-city ul li a {font-size: 14px;}
+
+/* ------------------극장 상세 지역------------------ */
+
+.sect-city .area .theater-list {overflow: hidden; display: block; margin-top: 15px;}
+.sect-city .area .theater-list li { float:left; display: inline-block;}
+.sect-city .area .theater-list li a span {font-size: 12px; border-right: 1px solid white; padding-right: 10px;}
+.sect-city .area .theater-list:last-child {border: none;}
+
+
+/* ------------------극장 상세 내용------------------ */
+.theater-logo {background-image: url(/Theater_img/bg_h3_line.jpg);}
+.theater-logo h3 {text-align: center; height: 41px; line-height: 41px; font-weight: 500; margin-bottom: 30px; margin-top: -30px;}
+.wrap-theater .sect-theater{display: flex; justify-content: space-between;}
+.wrap-theater .sect-theater h4 span {font-size: 30px;}
+.wrap-theater .sect-theater a {margin-top: 15px;}
+.wrap-theater .sect-theater a span {color: white; font-size: 12px; background-color: rgba(247, 18, 18, 0.774); padding: 5px 10px; border-radius: 5px; font-weight: bold;}
+
+/* ------------------극장 사진 내용------------------ */
+.wrap-theater-info {position: relative; margin-top: 15px;}
+.wrap-theater-info .box-image {width:980px; height:420px;}
+.wrap-theater-info .box-image .theater-pic > img {width:980px; height:420px;}
+.wrap-theater-info .box-contents {background: url(../images/common/bg/bg_dim80.png) 0 0 repeat; position: absolute;}
+
+
+
+

@@ -8,7 +8,7 @@ a {color: black; }
 /* -------------------헤더부분------------------- */
 .header {position: relative; z-index: 101;}
 .header .contents {width: 980px; margin: 0 auto;}
-.header-content{margin-bottom: 50px; border-bottom: 1px solid #2163B9;}
+.header-content{margin-bottom: 50px; border-bottom: 1px solid #c9c9c9;}
 .header-content .contents {display: flex; padding: 30px 6px 25px 5px; justify-content: space-between;}
 .header-content .contents h1 {display: inline-flex; align-items: flex-end; height: 53px;}
 .header-content .contents h1 a {display: block; float: left; height: 100%;}
@@ -23,9 +23,13 @@ a {color: black; }
 .header-content .contents .member-wrap .member2{font-size: 14px; position: absolute; bottom: 5px; left: -5px; white-space: nowrap; font-size: 12px;}
 
 /*  -------------------네비부분-------------------  */
-.nav{position: absolute; top:113px; left:0; width: 100%; padding: 5px 0; border-bottom: 1px solid red;}
-
-.nav .contents .search {display: inline-flex; position: absolute; right:0; top:5px; padding: 0 36px 0 10px;}
+.nav{position: absolute; top:113px; left:0; width: 100%; padding: 5px 0; border-bottom: 2px solid rgb(167, 43, 43);}
+.hidden-logo {display:none;}
+.nav .contents {overflow: hidden;}
+.nav .contents .nav-menu > li {float: left;}
+.nav .contents .nav-menu > li > h2 {display:block; padding: 20px;}
+.nav .contents .nav-menu > li > h2 > a {display: inline-block; text-decoration: none;}
+.nav .contents .search {float: right; padding-top: 20px;}
 .nav .contents .search input {border-style: none; border-left: 1px solid #a7a7a7;}
 
 /*  -------------------fixed nav-------------------  */
