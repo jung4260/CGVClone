@@ -39,7 +39,15 @@ a {color: white; text-decoration: none; }
 .wrap-theater-info {position: relative; margin-top: 15px;}
 .wrap-theater-info .box-image {width:980px; height:420px;}
 .wrap-theater-info .box-image .theater-pic > img {width:980px; height:420px;}
-.wrap-theater-info .box-contents {background: url(../images/common/bg/bg_dim80.png) 0 0 repeat; position: absolute;}
+.wrap-theater-info .box-contents {background-color: black; width: 980px; height:150px; opacity: 0.72; position:absolute; bottom:0;}
+.wrap-theater-info .box-contents .theater-info {position: relative;}
+.wrap-theater-info .box-contents .theater-info .title {color:white; font-size: 13px;position:absolute; top: 25px; left:30px}
+.wrap-theater-info .box-contents .theater-info .title a {color:rgb(170, 170, 170); font-size: 11px;}
+.wrap-theater-info .box-contents .theater-info > span {color:white; font-size: 13px;position:absolute; top: 70px; left:30px}
+
+.wrap-theater-info .box-contents .theater-info .screenplay a {width: 82px; height: 17px; margin: 3px 2px; background-image: url(/Theater_img/sprite_screentype02.png); }
+.wrap-theater-info .box-contents .theater-info .screenplay .screenX{background-position: -99px -162px;}
+
 
 
 
