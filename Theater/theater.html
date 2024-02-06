@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
         <div class="fav-theater-wrap">
             <div class="favorite-wrap">
                 <div class="sect-favorite">
@@ -88,7 +88,7 @@
                 sectCity.addEventListener('click', function () {
                     var target = event.target;
                     
-                    if (target.tagName === 'A') {
+                    if (target.tagName == 'A') {
                         var cityName = target.innerHTML;
         
                         theaterLists.forEach(function (list) {
@@ -124,28 +124,120 @@
                                     서울특별시 강남구 강남대로 438 (역삼동)
                                     <a href="#">위치/주차 안내></a>
                                 </strong>
-                                <span>
+                                <span class="phone">
                                     1544-1122 <br>
                                     6관 / 874석
                                 </span>
                                 <span class="screenplay">
-                                    <a href="#" class="screenX">   </a>
+                                    <a href="#" class="screenX"></a>
                                 </span>
                             </div>
                             <div class="notice">
-
+                                <span class="noti">공지사항</span>
+                                <a href="#" class="notiplus"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-</div>
 
+            <div style="margin-top: 20px;">
+                <img src="/Theater_img/ad_img.jpg" alt="">
+            </div>
 
+            <ul class="tab-menu">
+                <li><a href="#">상영시간표</a></li>
+                <li><a href="#">위치/주차안내</a></li>
+            </ul>
 
+            <div class="theater-date">
+                <div class="showtime-date">
+                    <ul class="calendar-date">
+                        <li class="finger-left"></li>                      
+                        <li class="date-info">
+                            <a href="#">
+                                <div class="date-column">
+                                    <div class="month"><span>02월</span></div>
+                                    <div class="day"><span>목</span></div>
+                                </div>
+                                <div class="date"><strong>08</strong></div>
+                            </a>
+                        </li>
+                        <li class="date-info">
+                            <a href="#">
+                                <div class="date-column">
+                                    <div class="month"><span>02월</span></div>
+                                    <div class="day"><span>금</span></div>
+                                </div>
+                                <div class="date"><strong>09</strong></div>
+                            </a>
+                        </li>
+                        <li class="date-info">
+                            <a href="#">
+                                <div class="date-column">
+                                    <div class="month"><span>02월</span></div>
+                                    <div class="day"><span>토</span></div>
+                                </div>
+                                <div class="date"><strong>10</strong></div>
+                            </a>
+                        </li>
+                        <li class="date-info">
+                            <a href="#">
+                                <div class="date-column">
+                                    <div class="month"><span>02월</span></div>
+                                    <div class="day"><span>일</span></div>
+                                </div>
+                                <div class="date"><strong>11</strong></div>
+                            </a>
+                        </li>
+                        <li class="date-info">
+                            <a href="#">
+                                <div class="date-column">
+                                    <div class="month"><span>02월</span></div>
+                                    <div class="day"><span>월</span></div>
+                                </div>
+                                <div class="date"><strong>12</strong></div>
+                            </a>
+                        </li>
+                        <li class="date-info">
+                            <a href="#">
+                                <div class="date-column">
+                                    <div class="month"><span>02월</span></div>
+                                    <div class="day"><span>화</span></div>
+                                </div>
+                                <div class="date"><strong>13</strong></div>
+                            </a>
+                        </li>
+                        <li class="finger-right"></li>
+                    </ul>
+                    <li class="price-info">
+                        <a href=""><span>관람가격 안내</span></a>
+                    </li>
+                    <li class="grade-info">
+                        <a href="#"><span>관람등급 안내</span></a>
+                        
+                    </li>
+                </div>
+                <div class="theater-age">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            
+                <div class="reserve-ad">
+                    <img src="/Theater_img/ad_next_cal.png" alt="">
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+            <div>
+                <img src="/Theater_img/ad_next_cal2.png" alt="">
+            </div>
+
+        </div>
     </div>
-
-
 
 
 

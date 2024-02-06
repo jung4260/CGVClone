@@ -46,9 +46,52 @@ a {color: white; text-decoration: none; }
 .wrap-theater-info .box-contents .theater-info .title {color:white; font-size: 13px;position:absolute; top: 25px; left:30px}
 .wrap-theater-info .box-contents .theater-info .title a {color:rgb(170, 170, 170); font-size: 11px;}
 .wrap-theater-info .box-contents .theater-info > span {color:white; font-size: 13px;position:absolute; top: 70px; left:30px}
-
 .wrap-theater-info .box-contents .theater-info .screenplay a {width: 82px; height: 17px; margin: 3px 2px; background-image: url(/Theater_img/sprite_screentype02.png); }
-.wrap-theater-info .box-contents .theater-info .screenplay .screenX{background-position: -99px -162px;}
+.wrap-theater-info .box-contents .theater-info .screenplay .screenX{position:absolute; bottom:25px; left:450px; background-position: -99px -162px;}
+
+.wrap-theater-info .box-image .box-contents .notice {border-left:1px solid rgb(66, 66, 66); width: 400px; height:100px; float: right; position: relative; margin-left: 15px; margin-top: 20px;}
+.wrap-theater-info .box-image .box-contents .notice .noti {position:absolute; left:40px; top:5px; color:white; font-size: 13px; font-weight: bold;}
+.wrap-theater-info .box-image .box-contents .notice .notiplus {background: url(/Theater_img/sprite_btn.png) -50px -62px no-repeat; width: 20px; height:19px; display: block; position:absolute; left:100px; top:4px;}
+
+/* ------------------ 상영시간표/위치/주차안내------------------ */
+.tab-menu {margin: 30px 0 15px; margin: 0 auto; text-align: center; width: 300px; line-height: 39px; background-color: rgba(247, 18, 18, 0.774); margin-top: 20px; margin-bottom: 40px;}
+.tab-menu li {display: inline-block; }
+.tab-menu li a {display: inline-block; position:relative; height:39px; padding: 0 15px; color:white; font-size: 15px; font-weight: bold;}
+
+/* ------------------ 영화 예매 날짜 ------------------ */
+.theater-date {overflow: hidden; position: relative;}
+.theater-date .showtime-date {width: 800px; height: 111px;  border-top: 3px solid black; border-bottom: 2px solid black; float: left;}
+.theater-date .reserve-ad {float: right;}
+.theater-date .calendar-date {position: relative;}
+.theater-date .calendar-date .finger-left {position: absolute; top:12px; left:0; background: url(/Theater_img/sprite_btn.png) -117px -174px no-repeat; width: 54px; height: 19px;}
+.theater-date .calendar-date .finger-right {position: absolute; top:12px; right:0px; background: url(/Theater_img/sprite_btn.png) -117px -155px no-repeat; width: 54px; height: 19px;}
+
+.theater-date .calendar-date {display: flex; justify-content: space-evenly; margin-top: 20px;}
+.theater-date .calendar-date .date-info {display: inline-flex; align-items: center; }
+.theater-date .calendar-date > li > a {display: flex; }
+.theater-date .calendar-date .date-info .date-column {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.theater-date .calendar-date .date-info .date-column .month, .day {font-size: 10px; font-weight: 100; z-index: 6; color:black}
+.theater-date .calendar-date .date-info .date {font-size: 30px; font-weight: 100; z-index: 6; color:black;} 
+
+.theater-date .price-info {float:right;}
+.theater-date .price-info a { background: url(/Theater_img/sprite_icon.png) 0 -158px no-repeat; height: 18px;}
+
+.theater-date .grade-info {float:right}
+.theater-date .grade-info a {display: inline-block; background: url(/Theater_img/sprite_icon.png) 0 -158px no-repeat; height: 18px;}
+.theater-date .grade-info a span { color:black; font-size: 12px;} 
+
+/* ------------------ 관람 표시 ------------------ */
+.theater-indicator {}
+
+
+
+
+
+
+
+
+
 
 
 
