@@ -12,7 +12,7 @@ a {color: white; text-decoration: none; }
 .favorite-wrap .sect-favorite .fav-list li a {display: block; border:2px solid #6e6c6d; float: left; width:107px; height:39px; text-decoration: none; color:white; position:relative;}
 .favorite-wrap .sect-favorite .fav-list li a span{font-size: 12px; position: absolute; top:3px; right:8px;}
 .favorite-wrap .sect-favorite .fav-list-add {background-image: url(/Theater_img/btn_plus.gif); width: 50px; height: 50px; position: absolute; right: 4px; top: 1px;}
-
+.favorite-wrap a {color: white; text-decoration: none; }
 /* ------------------시/군/구 지역------------------*/
 .sect-city {border-top: 2px solid #727171; border-bottom: 2px solid #727171; margin-top: 18px; height:42px;}
 .sect-city ul{display: flex; align-items: center; justify-content: space-evenly; position: relative;}

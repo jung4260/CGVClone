@@ -51,10 +51,27 @@ a {color: black; text-decoration: none; }
 }
 
 /* ----------------------- 왼쪽 영화 시간 상세 ----------------------- */
-.movie-wrapper {display: flex; flex-direction: column; padding: 30px;}
-.movie-name{}
+.movie-wrapper {display: flex; flex-direction: column; padding: 50px 20px;}
+.movie-name {display:flex; align-items: center;}
+.movie-name .age12{background-image: url(/Theater_img/age_12.png); background-repeat: no-repeat; width: 10px; height:10px; padding-left: 20px; padding-top: 10px;}
+.movie-name .age15{background-image: url(/Theater_img/age_15.png); background-repeat: no-repeat; width: 10px; height:10px; padding-left: 20px; padding-top: 10px;}
+.movie-name .ageAll{background-image: url(/Theater_img/age_all.png); background-repeat: no-repeat; width: 10px; height:10px; padding-left: 20px; padding-top: 10px;}
+.movie-name .movie-title {font-size: 16px; font-weight: bold;}
+.movie-name .movie-onair {padding: 1px; font-size: 12px; margin-left: 7px; color:#3e82a4; border:2px solid #3e82a4}
+.movie-name .movie-genre {font-size: 11px; margin-left:10px;}
 
+.movie-type {margin:20px; font-size: 10px;}
+.movie-type .t1 {border-right: 1px solid rgb(124, 124, 124); padding-right:7px;}
+.movie-type .t2 {border-right: 1px solid rgb(124, 124, 124); padding-right:7px; padding-left: 5px;}
+.movie-type .t3{padding-left: 5px;}
 
+.movie-showtime {margin-left: 20px; display: flex;}
+.showtime-info {border: 1px solid black; width: 80px; border-collapse: collapse; }
+.showtime-info > a {display: flex; flex-direction: column; font-size: 12px; justify-content: center; align-items: center; }
+.showtime-info > a > span {padding:3px;}
+.showtime-info > a > span:first-child {font-weight: 1000;}
+.showtime-info > a > span:last-child {color:rgb(88, 88, 204)}
 
+.movie-wrapper {border-bottom: 1px solid black;}
 
 
