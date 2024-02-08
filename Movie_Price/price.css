@@ -31,10 +31,10 @@
 .price-head th {border-bottom: 1px solid #ccc; padding: 15px 0 5px 0;}
 
 /* --------------------- 요금 가이드  ---------------------*/
-.price-guide1 {font-weight:500; font-size: 12px; margin-top: 80px; color:#666;}
-.price-guide2 {font-weight:500; font-size: 12px; padding-top: 10px; color:#666;}
-.price-guide3 {font-weight:500; font-size: 12px; margin-top: 10px; border-bottom: 2px solid #ab9c8f; color:#666;}
-
-
+.price-footer {width:980px; margin: 0 auto;}
+.price-guide1 {font-weight:700; font-size: 13px; margin-top: 50px; color:#666;}
+.price-guide2 {font-weight:700; font-size: 13px; padding-top: 10px; color:#666;}
+.price-guide3 {font-weight:700; font-size: 12px; margin-top: 10px; border-bottom: 2px solid #ab9c8f; color:#666;}
+.price-guide2 > span {color:#ab9c8f;}
 
 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="/Theater/theater_location.css">
+    <link rel="stylesheet" href="theater.css">
+    <link rel="stylesheet" href="/Theater/flexprac.css">
+    <script src="/Theater/theater.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=de0d1f4e5b29ece2d198622975cde397"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=s3rd6qo8j0"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="fav-theater-wrap">
+            <div class="favorite-wrap">
+                <div class="sect-favorite">
+                    <h4><img src="/Theater_img/h4_favorite_cgv.png"></h4>
+                    <ul class="fav-list">
+                        <li>
+                            <a href="#">
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li><a href="#"><span>2</span></a></li>
+                        <li><a href="#"><span>3</span></a></li>
+                        <li><a href="#"><span>4</span></a></li>
+                        <li><a href="#"><span>5</span></a></li>
+                    </ul>
+                    <button class="fav-list-add"></button>
+                </div>
+
+                <div class="sect-city">
+                    <ul>
+                        <li class="on"><a href="#">서울</a></li>
+                        <li><a href="#">경기</a></li>
+                        <li><a href="#">인천</a></li>
+                        <li><a href="#">강원</a></li>
+                        <li><a href="#">대전/충청</a></li>
+                        <li><a href="#">부산/울산</a></li>
+                        <li><a href="#">경상</a></li>
+                        <li><a href="#">광주/전라/제주</a></li>
+                    </ul>
+                    <div class="area">
+                        <ul class="theater-list active" data-city="서울">
+                            <li><a href="#"><span>CGV강남</span></a></li>
+                            <li><a href="#"><span>CGV강변</span></a></li>
+                            <li><a href="#"><span>CGV건대입구</span></a></li>
+                            <li><a href="#"><span>CGV구로</span></a></li>
+                            <li><a href="#"><span>CGV대학로</span></a></li>
+                            <li><a href="#"><span>CGV동대문</span></a></li>
+                            <li><a href="#"><span>CGV등촌</span></a></li>
+                            <li><a href="#"><span>CGV등촌</span></a></li>
+                            <li><a href="#"><span>CGV미아</span></a></li>
+                            <li><a href="#"><span>CGV방학</span></a></li>
+                            <li><a href="#"><span>CGV불광</span></a></li>
+                            <li><a href="#"><span>CGV상봉</span></a></li>
+                            <li><a href="#"><span>CGV성신여대입구</span></a></li>
+                            <li><a href="#"><span>CGV송파</span></a></li>
+                            <li><a href="#"><span>CGV신촌아트레온</span></a></li>
+                            <li><a href="#"><span>CGV압구정</span></a></li>
+                            <li><a href="#"><span>CGV여의도</span></a></li>
+                            <li><a href="#"><span>CGV연남</span></a></li>
+                            <li><a href="#"><span>CGV영등포</span></a></li>
+                            <li><a href="#"><span>CGV천호</span></a></li>
+                            <li><a href="#"><span>CGV하계</span></a></li>
+                            <li><a href="#"><span>CGV용산아이파크</span></a></li>
+                            <li><a href="#"><span>CGV홍대</span></a></li>
+                            <li><a href="#"><span>CGV홍대</span></a></li>
+                            <li><a href="#"><span>CGV홍대</span></a></li>
+                        </ul>
+                        <ul class="theater-list" data-city="경기">
+                            <li><a href="#"><span>CGV경기광주</span></a></li>
+                            <li><a href="#"><span>CGV고양백석</span></a></li>
+                            <li><a href="#"><span>CGV고양행신</span></a></li>
+                            <li><a href="#"><span>CGV광교</span></a></li>
+                            <li><a href="#"><span>CGV광교상현</span></a></li>
+                            <li><a href="#"><span>CGV광명역</span></a></li>
+                        </ul>
+                        <ul class="theater-list" data-city="인천">
+                            <li><a href="#"><span>CGV계양</span></a></li>
+                            <li><a href="#"><span>CGV남주안</span></a></li>
+                            <li><a href="#"><span>CGV부평</span></a></li>
+                            <li><a href="#"><span>CGV송도타임스페이스</span></a></li>
+                            <li><a href="#"><span>CGV인천연수</span></a></li>
+                            <li><a href="#"><span>CGV인천학익</span></a></li>
+                            <li><a href="#"><span>CGV인천논현</span></a></li>
+                            <li><a href="#"><span>CGV청라</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var sectCity = document.querySelector(".sect-city");
+                var theaterLists = document.querySelectorAll(".theater-list");
+        
+                sectCity.addEventListener('click', function () {
+                    var target = event.target;
+                    
+                    if (target.tagName == 'A') {
+                        var cityName = target.innerHTML;
+        
+                        theaterLists.forEach(function (list) {
+                            list.classList.remove("active");
+                        });
+        
+                        var theaterList = document.querySelector('.theater-list[data-city="' + cityName + '"]');
+                        if (theaterList) {
+                            theaterList.classList.add("active");
+                        }
+                    }
+                });
+            </script>
+
+            <div class="theater-logo">
+                <h3><img src="/Theater_img/h3_theater.gif" alt=""></h3>
+            </div>
+
+            <div class="wrap-theater">
+                <div class="sect-theater">
+                    <h4><span>UM강남</span></h4>
+                    <a href="#"><span>단체/대관문의</span></a>
+                </div>
+                <div class="wrap-theater-info">
+                    <div class="box-image">
+                        <div class="theater-pic">
+                            <img src="/Theater_img/CGVgangnam.jpg" alt="">
+                        </div>
+                        <div class="box-contents">
+                            <div class="theater-info">
+                                <strong class="title">
+                                    서울특별시 강남구 역삼동 814-6 스타플렉스 <br>
+                                    서울특별시 강남구 강남대로 438 (역삼동)
+                                    <a href="#">위치/주차 안내></a>
+                                </strong>
+                                <span class="phone">
+                                    1544-1122 <br>
+                                    6관 / 874석
+                                </span>
+                                <span class="screenplay">
+                                    <a href="#" class="screenX"></a>
+                                </span>
+                            </div>
+                            <div class="notice">
+                                <span class="noti">공지사항</span>
+                                <a href="#" class="notiplus"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <ul class="tab-menu">
+                <li><a href="theater.html">상영시간표</a></li>
+                <li><a href="theater_location.html" class="tab-location">위치/주차안내</a></li>
+            </ul>
+
+            <div class="theater-name">UM 강남</div>
+
+          
+
+            <div class="transportation-schedule">
+                <div class="bus-train-schedule">
+                    <div class="trans-title">
+                        <span>교통안내</span>
+                        <a href="#" class="trans-map">네이버 지도</a>
+                    </div>
+                </div>
+
+                <script>
+                    var loca = document.querySelector(".trans-map");
+                    loca.onclick = function () {
+                        window.open ("GPS.html", "GPS", "width=700, height=700, left=200, top=200")
+                    }
+    
+                </script>
+            
+
+                <div class="ad-banner">
+                    <img src="/Theater_img/ad_next_cal.png">
+                    <img src="/Theater_img/ad_next_cal2.png">
+                </div>
+
+            </div>
+
+</body>
+</html>

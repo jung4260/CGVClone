@@ -35,7 +35,7 @@ a {color: white; text-decoration: none; }
 .wrap-theater .sect-theater{display: flex; justify-content: space-between;}
 .wrap-theater .sect-theater h4 span {font-size: 30px;}
 .wrap-theater .sect-theater a {margin-top: 15px;}
-.wrap-theater .sect-theater a span {color: white; font-size: 12px; background-color: rgba(247, 18, 18, 0.774); padding: 5px 10px; border-radius: 5px; font-weight: bold;}
+.wrap-theater .sect-theater a span {color: white; font-size: 12px; background-color: rgba(247, 18, 18, 0.774); padding: 5px 10px; border-radius: 2px; font-weight: bold;}
 
 /* ------------------극장 사진 내용------------------ */
 .wrap-theater-info {position: relative; margin-top: 15px;}

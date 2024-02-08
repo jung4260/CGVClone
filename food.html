@@ -81,5 +81,45 @@
 
     </div>
 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .location {text-align: center; display: flex; flex-direction: column;} 
+        .span {font-size: 30px; font-weight: bold; padding: 20px;}
+        .address {display: none;} /* Hide the address */
+        .close {align-items: self-end;}
+        #map {width: 70%; height: 500px; margin: 0 auto;}
+    </style>
+    <script>
+        function openPopup() {
+            var popupWindow = window.open("", "_blank", "width=800,height=600");
+            popupWindow.document.write(`
+                <html>
+                <head>
+                    <title></title> <!-- Set the title to an empty string -->
+                    <style>
+                        /* Add your styles here if needed */
+                    </style>
+                </head>
+                <body>
+                    <div class="location">
+                        <span class="span">UM 강남</span>
+                        <div id="map" style="width: 70%; height: 500px; margin: 0 auto;"></div>
+                        <div class="address">Your address goes here</div>
+                        <input type="checkbox" onclick="window.close();" class="close"> 더 이상 열지 않기
+                    </div>
+                </body>
+                </html>
+            `);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openPopup()">Open Popup</button>
+</body>
+</html>
+
+
 </body>
 </html>
