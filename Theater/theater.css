@@ -24,7 +24,7 @@ a {color: white; text-decoration: none; }
 .sect-city .area .theater-list.active {overflow: hidden; display: block; margin-top: 15px;}
 .sect-city .area .theater-list.active li { float:left; display: inline-block;}
 .sect-city .area .theater-list.active li a span {font-size: 12px; border-right: 1px solid white; padding-right: 10px;}
-.sect-city .area .theater-list:last-child {border: none;}
+.sect-city .area .theater-list:last-child {border-right: none;}
 
 .sect-city .area .theater-list {display:none;}
 
@@ -81,9 +81,8 @@ a {color: white; text-decoration: none; }
 .theater-date .grade-info a {display: inline-block; background: url(/Theater_img/sprite_icon.png) 0 -158px no-repeat; height: 18px;}
 .theater-date .grade-info a span { color:black; font-size: 12px;} 
 
-/* ------------------ 관람 표시 ------------------ */
-.theater-indicator {}
-
+/* ------------------ 상영 경고 ------------------ */
+.warn  {font-size: 12px;}
 
 
 
